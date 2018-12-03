@@ -7,6 +7,7 @@ const WILDCARDS = [
 		),
 	c => c.match(/^(R|r)evert (.*)/),
 	c => c.match(/^(fixup|squash)!/),
+	c => c.match(/^WIP/),
 	c =>
 		semver.valid(
 			c
